@@ -22,3 +22,10 @@ have on our directory.
    You can make granular commits so don't have to commit all the changed
 files from the directory at once, instead you can select which modified
 fields (changes) you want to add to the staging area and the commit them.
+
+Bottom line:
+       git diff : compares working dir with staging area
+       git diff --staged : compares staging area with last commit
+from the repository (HEAD)
+       git reset --hard : removes changes from working directory and
+staging area
