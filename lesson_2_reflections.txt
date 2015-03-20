@@ -1,0 +1,24 @@
+
+1. What happens when you initialize a repository? Why do you need to do it?
+
+   You get a empty repository where you can start adding commits.
+   You need this in order to start versioning your files.
+
+Bottom line:
+       git init
+       git status
+
+			WORKING DIRECTORY
+				|
+			STAGING AREA
+				|
+			REPOSITORY
+
+2. How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+   It is the bridge between what we have in the repository and what we
+have on our directory.
+   You can make granular commits so don't have to commit all the changed
+files from the directory at once, instead you can select which modified
+fields (changes) you want to add to the staging area and the commit them.
