@@ -1,7 +1,10 @@
-
 Bottom line:  
        git branch : view/ create branch
        git remote : view/ craeate remote
        git remote add "remoteName" "remoteUrl" : most common remote name is origin 
        git remote -v : show info on the remote (verbose)
        git push "remote" "branch" 
+
+1. When would you want to use a remote repository rather than keeping all your work local?
+
+
