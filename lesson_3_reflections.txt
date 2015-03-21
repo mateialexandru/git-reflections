@@ -17,6 +17,13 @@ Bottom line:
    Only after finishing my task I can then pull changes from the remote repository and fix any conflicts that might appear (same as
    merging one branch into another, just that they are in different locations, one on my PC, another online).
 
+3. Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+   Fork - clone of one repository to another repository on github
+   Clone - copy of one repository to another repository
+   Branch - Tags on commits that makes it easier to organize your repository; every branch keeps a HEAD which
+   reffers to the latest commit on that branch
+
 
    
    
