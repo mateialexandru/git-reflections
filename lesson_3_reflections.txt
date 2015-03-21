@@ -10,3 +10,13 @@ Bottom line:
    * when I am confident that my work done so far can be shared we others
    * when I want to have an online backup of my repository that I can access from any PC
    * when I want to collaborate with others on the project
+
+2. Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+   I want to have control full control over what I am working on, on my local repository (I see it sort of like working on a different branch).
+   Only after finishing my task I can then pull changes from the remote repository and fix any conflicts that might appear (same as
+   merging one branch into another, just that they are in different locations, one on my PC, another online).
+
+
+   
+   
