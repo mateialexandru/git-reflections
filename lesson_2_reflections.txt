@@ -29,3 +29,67 @@ Bottom line:
 from the repository (HEAD)
        git reset --hard : removes changes from working directory and
 staging area
+
+3. How can you use the staging area to make sure you have one commit per logical change?
+
+   You can modify multiple files in your repository and only stage some of them. That way you
+   can group them in a logical manner.
+
+					Branching
+							
+							Experimental Feature
+
+							{}      ->    {}      ->		  branch: experimental
+Fix bug		Add feature	   Update docs
+
+ {}      ->          {}      ->          {}      ->     {}      ->    {}      ->    {}      ->    {}      ->		default branch: master 
+
+
+ 	 	     	     		 	 	{}      ->    {}      ->    	    	  branch: italian
+
+							Italian version
+
+
+Bottom line:
+       git branch : shows the current branch you' re in; shows the checked-out branch
+       git branch [branchName]: creates a branch named branchName
+       git checkout [branchName]
+
+
+4. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+   Here are some situations where branches would be helpful:
+   
+	* trying out experimental features
+	* making refactoring
+	* anything else that involvs breaking changes :)
+	* preserving versions of the product that should go in parallel
+
+   Branching offers you better semantics for your actions (compared to just use a commit message) so yes, it helps keeping
+   history organized. It's much more easier to switch between branches than going trough the git log and checkout a commit
+   (if you are not using branches). It allows you to evolve multiple versions of the product in parallel, which is pretty neat
+   and in some particular projects absolutely necessary.
+
+   Bottom line:
+   	  * master branch can be consider as the production branch : quality code, that works perfectly
+	  * development branch
+	  * experimental branch
+	  * unique feature branch 
+
+	  Branching can be regarded as "context switching" and help you focus on what you need to do.
+	  If you get bored on working on a feature, you can leave it like that for now and switch back to another branch
+	  and start workign on something else ;).
+
+	  git log --graph --oneline [branch1] [branch2]
+
+	  git checkout -b "brachName" => git branch "branchName" + git checkout "branchName"
+
+	  HEAD -> Latest commit in a branch
+
+5. How do the diagrams help you visualize the branch structure?
+
+   * It helps knowing where you're current position is in the big picture of the whole repository.
+   * You can understand how many commits you are away from the master banch (or any other branch) in case you plan on
+   merging changes, etc.
+   * It helps you understand what else happend in the repo (i.e. other branches) while you worked on your branch.
+   * It makes it easier to you to locate a particular change and starting working from there on
