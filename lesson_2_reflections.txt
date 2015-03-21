@@ -108,3 +108,16 @@ Bottom line:
    checked out before the merge) and that has two parents, one being the current branch and the other being the branch
    we merged; by representing it like that, we can figure out that a git log on the current branch will include also
    the commits from the merged branch :). Hope this explanation is clear enough.
+
+7. What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+   Pros:
+	* you don't have to worry with merges when you just added new functionality
+	* lets you know when someone else updated the same document lines as you
+   Cons:
+	* maybe someone added bad things to a file, but because of automatic merging you don't get to notice that;
+	you have to do an extra diff to see what changed
+
+
+
+   
