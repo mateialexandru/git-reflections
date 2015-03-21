@@ -93,3 +93,18 @@ Bottom line:
    merging changes, etc.
    * It helps you understand what else happend in the repo (i.e. other branches) while you worked on your branch.
    * It makes it easier to you to locate a particular change and starting working from there on
+
+   Bottom line:
+
+   	  git merge master coins : merge coins into master
+	  git show "commitId" : shows diff between commit and it's parent
+	  git branch -d "branchName" : delete the branch
+
+6. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+   You can merge the current checked out branch with another one: this involves introducing the changes from the merged
+   branch into your current one. The commits will be ordered based on their timestamp.
+   We represent them in the diagram with a new commit point, that becomes the HEAD of the current branch (the one we
+   checked out before the merge) and that has two parents, one being the current branch and the other being the branch
+   we merged; by representing it like that, we can figure out that a git log on the current branch will include also
+   the commits from the merged branch :). Hope this explanation is clear enough.
