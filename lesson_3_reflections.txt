@@ -24,6 +24,14 @@ Bottom line:
    Branch - Tags on commits that makes it easier to organize your repository; every branch keeps a HEAD which
    reffers to the latest commit on that branch
 
+Bottom line:
 
-   
-   
+       * When you connect to a remote repository you get extra branches for every branch on the remote repository i.e.
+       origin/master , origin/exp, origin/dev
+       * If you use git pull then what happens is that you update the origin/branchName on your local repo and also
+       merge your local branch (branchName) with the origin/branchName so they both point to the same commit 
+       * You can only update origin/* branches locally by using git fetch
+
+4. What is the benefit of having a copy of the last known state of the remote stored locally?
+
+   You have more control on the merging process when it comes to syncing both the remote repository and your local one.
