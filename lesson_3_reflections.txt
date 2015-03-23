@@ -43,3 +43,19 @@ Bottom line:
    diff tool to see changes between versions and modify each modified document accordingly.
 
    Plus, you will loose the history of changes that ocurred in the project.
+
+6. When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+   * when collaborataing with another person
+   * when the master branch is regarded as the production branch where everything should work
+   * when there is a project lead that has to make sure the changes are proper implemented and that more bugs aren't introduced
+   * when there is a QA team maybe
+
+   The benefit is that you can vizualize better the changes that occured in the product (by watching the master commit log) and
+   that you can assign the task of checking the changes and merging them to a specific person, that can then decide to add
+   them to the master or not.
+   
+   This is how collaboration in open source projects works, one being the responsible for the project and taking care of all
+   the pull requests that come from collaborators. If he decides the pull request benefits the project, he can than merge it in
+   the master and so the codebase improves.
+   
