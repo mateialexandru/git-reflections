@@ -59,3 +59,9 @@ Bottom line:
    the pull requests that come from collaborators. If he decides the pull request benefits the project, he can than merge it in
    the master and so the codebase improves.
    
+Bottom line:
+
+       Make an upstream remote that refers to the original repo that you forked. Ideally, when you fork a project you
+       will have on your local repository the followin remotes:
+       	    * upstream
+	    * origin
