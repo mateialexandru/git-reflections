@@ -35,3 +35,11 @@ Bottom line:
 4. What is the benefit of having a copy of the last known state of the remote stored locally?
 
    You have more control on the merging process when it comes to syncing both the remote repository and your local one.
+
+5. How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+   It would be harder, since all versions should have been saved into archives, most probably. So every collaborator should
+   send a zip file of their work to the techincal lead. Only then he would need to use
+   diff tool to see changes between versions and modify each modified document accordingly.
+
+   Plus, you will loose the history of changes that ocurred in the project.
